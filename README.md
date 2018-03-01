@@ -2,7 +2,7 @@
 
 Program follows the MVVM design principle and utilizes WPF for the user interface.
 
-Main purpouse is to read/write data from sqlite file-database and sametime to demo the UnitOfWork design pattern which is implemented to take advance of the Entity Framework Core database access.
+Main purpouse is to read/write data from sqlite file-database and to demo the UnitOfWork design pattern which is implemented to take advance of the Entity Framework Core.
 
 # Frameworks
 
