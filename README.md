@@ -7,8 +7,11 @@ Main purpouse is to read/write data from sqlite file-database and sametime to de
 # Frameworks
 
 Mvvm light [http://www.mvvmlight.net]
-Entity FRamework Core 2.1 [https://docs.microsoft.com/en-us/ef/core/]
+
+Entity Framework Core 2.1 [https://docs.microsoft.com/en-us/ef/core/]
+
 Unity Container [https://msdn.microsoft.com/en-us/library/ff647202.aspx]
+
 SQLite [https://www.sqlite.org/index.html]
 
 # Authors
