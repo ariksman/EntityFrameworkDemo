@@ -1,0 +1,66 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- ClearButton Control Template / Style -->
+    <ControlTemplate TargetType="{x:Type Button}" x:Key="ClearButtonTemplate">
+        <Grid>
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <Storyboard>
+                            <ColorAnimation Duration="0:0:0"
+                                                Storyboard.TargetName="ButtonBackgroundBrush"
+                                                Storyboard.TargetProperty="Color" To="{TemplateBinding Background}"/>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="MouseOver">
+                        <Storyboard>
+                            <ColorAnimation Duration="0:0:0"
+                                                Storyboard.TargetName="ButtonBackgroundBrush"
+                                                Storyboard.TargetProperty="Color" To="LightSlateGray"/>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="Pressed">
+                        <Storyboard>
+                            <ColorAnimation Duration="0:0:0"
+                                                Storyboard.TargetName="ButtonBackgroundBrush"
+                                                Storyboard.TargetProperty="Color" To="White"/>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Border BorderBrush="{TemplateBinding Foreground}"
+                        BorderThickness="1"
+                        Padding="10">
+                <Border.Background>
+                    <SolidColorBrush x:Name="ButtonBackgroundBrush" 
+                                         Color="{TemplateBinding Background}" />
+                </Border.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <ContentPresenter Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left">
+                    </ContentPresenter>
+                    <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right"
+                               Text="X " FontSize="48" Margin="0,0,0,-10"
+                               Opacity="0.5" Foreground="{TemplateBinding Foreground}" />
+                </Grid>
+            </Border>
+        </Grid>
+    </ControlTemplate>
+
+    <Style TargetType="{x:Type Button}" x:Key="ClearButtonStyle">
+        <Setter Property="Foreground" Value="{StaticResource ApplicationTextForeground}"/>
+        <Setter Property="Background" Value="{StaticResource ApplicationBackground}"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Padding" Value="7,3"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Template" Value="{StaticResource ClearButtonTemplate}" />
+    </Style>
+</ResourceDictionary>
