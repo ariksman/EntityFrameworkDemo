@@ -14,8 +14,6 @@ Unity Container [https://msdn.microsoft.com/en-us/library/ff647202.aspx]
 
 SQLite [https://www.sqlite.org/index.html]
 
-# Authors
-
-Antti Riksman
+#
 
 If debugging is the process of removing software bugs, then programming must be the process of putting them in.
