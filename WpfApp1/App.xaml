@@ -13,7 +13,6 @@
 
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="UserInterface/Styles/ApplicationColourStyle.xaml" />
-                <ResourceDictionary Source="UserInterface/Styles/NewToggleSwitchStyle.xaml" />
                 <ResourceDictionary Source="UserInterface/Styles/GoButtonStyle.xaml" />
                 <ResourceDictionary Source="UserInterface/Styles/ClearButtonStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
