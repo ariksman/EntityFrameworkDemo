@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using WpfApp.Core.Domain;
+using EntityFrameworkDemo.Core.Domain;
 
-namespace WpfApp.Core.Repositories
+namespace EntityFrameworkDemo.Core.Repositories
 {
     public interface IEmployerRepository : IRepository<Employer>
     {

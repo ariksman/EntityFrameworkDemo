@@ -1,13 +1,13 @@
 ﻿using System;
 using System.IO;
+using EntityFrameworkDemo.Core;
+using EntityFrameworkDemo.Core.Repositories;
+using EntityFrameworkDemo.Persistence.Repositories;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using WpfApp.Core;
-using WpfApp.Core.Repositories;
-using WpfApp.Persistence.Repositories;
 
-namespace WpfApp.Persistence
+namespace EntityFrameworkDemo.Persistence
 {
     public class UnitOfWork : IUnitOfWork
     {

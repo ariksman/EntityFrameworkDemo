@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace WpfApp.Core.Repositories
+namespace EntityFrameworkDemo.Core.Repositories
 {
     public interface IRepository<TEntity> where TEntity : class
     {

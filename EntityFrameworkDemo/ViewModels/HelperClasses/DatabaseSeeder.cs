@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WpfApp.Core;
-using WpfApp.Core.Domain;
-using WpfApp.Persistence;
+﻿using EntityFrameworkDemo.Core;
+using EntityFrameworkDemo.Core.Domain;
 
-namespace WpfApp.ViewModels.HelperClasses
+namespace EntityFrameworkDemo.ViewModels.HelperClasses
 {
     public class DatabaseSeeder
     {

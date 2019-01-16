@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace WpfApp.Views
+namespace EntityFrameworkDemo.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

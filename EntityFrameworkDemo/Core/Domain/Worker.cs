@@ -1,6 +1,6 @@
-﻿using WpfApp.Models;
+﻿using EntityFrameworkDemo.Models;
 
-namespace WpfApp.Core.Domain
+namespace EntityFrameworkDemo.Core.Domain
 {
     public class Worker : ModelBase
     {

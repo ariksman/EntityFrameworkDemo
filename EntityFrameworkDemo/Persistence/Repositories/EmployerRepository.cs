@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using EntityFrameworkDemo.Core.Domain;
+using EntityFrameworkDemo.Core.Repositories;
 using Microsoft.EntityFrameworkCore;
-using WpfApp.Core.Domain;
-using WpfApp.Core.Repositories;
 
-namespace WpfApp.Persistence.Repositories
+namespace EntityFrameworkDemo.Persistence.Repositories
 {
     public class EmployerRepository : Repository<Employer>, IEmployerRepository
     {

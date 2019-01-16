@@ -2,9 +2,9 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using WpfApp.Properties;
+using EntityFrameworkDemo.Properties;
 
-namespace WpfApp.Models
+namespace EntityFrameworkDemo.Models
 {
     public class Person : ModelBase
     {

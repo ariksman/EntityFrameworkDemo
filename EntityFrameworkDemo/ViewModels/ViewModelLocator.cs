@@ -1,14 +1,14 @@
 ﻿using System.IO;
 using CommonServiceLocator;
+using EntityFrameworkDemo.Core;
+using EntityFrameworkDemo.Core.Repositories;
+using EntityFrameworkDemo.Persistence;
+using EntityFrameworkDemo.Persistence.Repositories;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Unity;
-using WpfApp.Core;
-using WpfApp.Core.Repositories;
-using WpfApp.Persistence;
-using WpfApp.Persistence.Repositories;
 
-namespace WpfApp.ViewModels
+namespace EntityFrameworkDemo.ViewModels
 {
     public class ViewModelLocator
     {

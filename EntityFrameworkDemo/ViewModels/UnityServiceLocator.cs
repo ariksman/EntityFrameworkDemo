@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using CommonServiceLocator;
 using Unity;
 
-namespace WpfApp.ViewModels
+namespace EntityFrameworkDemo.ViewModels
 {
     public class UnityServiceLocator : IServiceLocator
     {

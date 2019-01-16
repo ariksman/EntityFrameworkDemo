@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using WpfApp.Models;
+using EntityFrameworkDemo.Models;
 
-namespace WpfApp.Core.Domain
+namespace EntityFrameworkDemo.Core.Domain
 {
     public class Employer : ModelBase
     {

@@ -1,7 +1,7 @@
 ﻿using System;
-using WpfApp.Core.Repositories;
+using EntityFrameworkDemo.Core.Repositories;
 
-namespace WpfApp.Core
+namespace EntityFrameworkDemo.Core
 {
     public interface IUnitOfWork : IDisposable
     {

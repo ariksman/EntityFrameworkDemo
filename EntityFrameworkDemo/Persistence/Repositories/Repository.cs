@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using EntityFrameworkDemo.Core.Repositories;
 using Microsoft.EntityFrameworkCore;
-using WpfApp.Core.Repositories;
 
-namespace WpfApp.Persistence.Repositories
+namespace EntityFrameworkDemo.Persistence.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {

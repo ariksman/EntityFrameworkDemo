@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using CommonServiceLocator;
+using EntityFrameworkDemo.Core;
+using EntityFrameworkDemo.Core.Domain;
+using EntityFrameworkDemo.Models;
+using EntityFrameworkDemo.ViewModels.HelperClasses;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-using WpfApp.Core;
-using WpfApp.Core.Domain;
-using WpfApp.Models;
-using WpfApp.ViewModels.HelperClasses;
 
-namespace WpfApp.ViewModels
+namespace EntityFrameworkDemo.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {

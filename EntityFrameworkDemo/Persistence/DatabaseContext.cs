@@ -1,8 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using WpfApp.Core.Domain;
+﻿using EntityFrameworkDemo.Core.Domain;
+using Microsoft.EntityFrameworkCore;
 
-namespace WpfApp.Persistence
+namespace EntityFrameworkDemo.Persistence
 {
     public sealed class DatabaseContext : DbContext
     {
