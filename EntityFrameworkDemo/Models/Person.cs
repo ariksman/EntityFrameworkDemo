@@ -1,8 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using EntityFrameworkDemo.Properties;
 
 namespace EntityFrameworkDemo.Models
 {
@@ -15,9 +13,9 @@ namespace EntityFrameworkDemo.Models
             _random = new Random();
         }
 
-        public ObservableCollection<Person> CreatePersonData(int count)
+        public List<Person> CreatePersonData(int count)
         {
-            var persons = new ObservableCollection<Person>();
+            var persons = new List<Person>();
 
             for (int i = 0; i < count; i++)
             {
@@ -96,18 +94,4 @@ namespace EntityFrameworkDemo.Models
         }
     #endregion
     }
-
-    
-
-    public class ModelBase : INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
-    
 }

@@ -187,6 +187,7 @@
       <DependentUpon>20180301113626_FirstMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\DatabaseContextModelSnapshot.cs" />
+    <Compile Include="Models\ModelBase.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Persistence\DatabaseContext.cs" />
     <Compile Include="Persistence\Repositories\EmployerRepository.cs" />

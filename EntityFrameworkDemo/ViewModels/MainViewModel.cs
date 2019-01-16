@@ -112,7 +112,7 @@ namespace EntityFrameworkDemo.ViewModels
         /// </summary>
         private void LoadPersonsExecute()
         {
-            Persons = new Person().CreatePersonData(25);
+            Persons = new ObservableCollection<Person>(new Person().CreatePersonData(25));
 
             IsChecked = false;
         }
