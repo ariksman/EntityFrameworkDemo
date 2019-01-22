@@ -24,7 +24,14 @@ namespace EntityFrameworkDemo.Persistence.Repositories
             throw new NotImplementedException();
         }
 
-        public Employer GetWorkerEmployer(Worker worker)
+      public bool RemoveWorker(int workerId)
+      {
+        var localWorker = DatabaseContext.Workers.FirstOrDefault(w => w.WorkerId == workerId);
+        DatabaseContext.Workers.Remove(localWorker ?? throw new InvalidOperationException());
+        return true;
+      }
+
+      public Employer GetWorkerEmployer(Worker worker)
         {
             throw new NotImplementedException();
         }

@@ -7,21 +7,19 @@ using EntityFrameworkDemo.Persistence.Repositories;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Unity;
+using Unity.Injection;
+using Unity.Lifetime;
 
 namespace EntityFrameworkDemo.ViewModels
 {
     public class ViewModelLocator
     {
-
         private readonly UnityContainer _unityContainer;
         private readonly LifetimeManager _mainWindowLifetimeManager = new ContainerControlledLifetimeManager();
         private readonly LifetimeManager _databaseLifetimeManager = new TransientLifetimeManager();
 
         public ViewModelLocator()
         {
-            // Register SimpleIoc as the IOC container
-            //ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-            //SimpleIoc.Default.Register<MainViewModel>();
 
             // Register Unity as the IOC container
             _unityContainer = new UnityContainer();
