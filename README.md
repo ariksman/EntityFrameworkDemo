@@ -1,4 +1,5 @@
 # The program - EntityFrameworkDemo
+[![CodeFactor](https://www.codefactor.io/repository/github/ariksman/entityframeworkdemo/badge)](https://www.codefactor.io/repository/github/ariksman/entityframeworkdemo)
 
 Program follows the MVVM design principle and utilizes WPF for the user interface.
 
